@@ -8,7 +8,7 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .girar {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -35,4 +35,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+/* ----------------- */
+.mini-cont{
+
+  background-color: pink;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 70%;
+  margin: 30px auto;
+}
+.big-cont{
+  background-color: rgb(255, 167, 167);
+  width: 70%;
+  min-height: 50vh;
+  margin: 0 auto;
+  padding: 10px 0;
+}
+input{
+  width: 200px;
+}
+
+
+/* ----------- */
+.link_to{
+  color: white;
+  text-decoration:none;
+  border: 1px solid grey;
+  padding: 10px;
+}
+
+nav{
+  background-color: black;
+  display: flex;
+  justify-content: space-around;
 }

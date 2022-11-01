@@ -2,18 +2,18 @@
   text-align: center;
 }
 
-.App-logo {
+/* .App-logo {
   height: 40vmin;
   pointer-events: none;
-}
+} */
 
-@media (prefers-reduced-motion: no-preference) {
+/* @media (prefers-reduced-motion: no-preference) {
   .girar {
     animation: App-logo-spin infinite 20s linear;
   }
-}
+} */
 
-.App-header {
+/* .App-header {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
@@ -22,11 +22,11 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
-}
+} */
 
-.App-link {
+/* .App-link {
   color: #61dafb;
-}
+} */
 
 @keyframes App-logo-spin {
   from {
@@ -55,7 +55,7 @@
   padding: 10px 0;
 }
 input{
-  width: 200px;
+  /* width: 200px; */
 }
 
 
@@ -71,4 +71,27 @@ nav{
   background-color: black;
   display: flex;
   justify-content: space-around;
+}
+
+/* -----Eventos----- */
+.center{
+  /* background-color: rgb(223, 255, 223); */
+  text-align: center;
+}
+.right{
+  text-align: right;
+}
+.left{
+  text-align: left;
+}
+
+.estilo{
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color:darkblue;
+  color: white;
+}
+
+/* Form */
+.radio-img img{
+  width: 70px;
 }

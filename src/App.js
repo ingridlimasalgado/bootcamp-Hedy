@@ -13,6 +13,8 @@ import RutaClases, { Clase } from './components/RutaClases';
 import ComponenteTarea from './components/ComponenteTarea';
 import ActividadSet from './components/ActividadSet';
 import Home from './components/Home';
+import Eventos from './components/Eventos';
+import Formulario from './components/Formulario';
 
 function App() {
 
@@ -20,10 +22,15 @@ function App() {
   return (
     <div className="App">
 
+      {/* <Formulario /> */}
+
       <BrowserRouter>
       
         <nav className='barra_nav'>
+          
           <Link className='link_to' to='/home'>Inicio</Link>
+          <Link className='link_to' to='/form'>Formulario</Link>
+          <Link className='link_to' to={'/eventos'}>Eventos</Link>
           <Link className='link_to' to='/fetch'>Fetch</Link>
           <Link className='link_to' to='/axios'>Axios</Link>
           <Link className='link_to' to='/contador'>Contador</Link>
@@ -34,8 +41,10 @@ function App() {
         </nav>
       
         <Routes>
-        <Route exact path='/home' element={<Home/>}/>
-          <Route exact path='/' element={<Home/>}/>
+          <Route exact path='/home' element={<Home/>}/>
+          <Route path='/form' element={<Formulario/>}/>
+          <Route path='/eventos' element={<Eventos/>}/>
+          <Route path='/' element={<Home/>}/>
           <Route path='/axios' element={<Axios/>}/>
           <Route path='/fetch' element={<Fetch />} />
           <Route path='/contador' element={<Contador />}/>
